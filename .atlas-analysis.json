@@ -1,0 +1,176 @@
+{
+  "projectType": "saas",
+  "projectName": "useSend",
+  "projectDescription": "Open source email sending infrastructure and alternative to Resend, Sendgrid, and Postmark",
+  "theme": "maple",
+  "primaryColor": "#21453D",
+  "lightColor": "#E6FAF5",
+  "darkColor": "#21453D",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "SDKs & Integration",
+            "pages": [
+              "sdks/nodejs",
+              "sdks/python",
+              "sdks/go",
+              "sdks/smtp"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/transactional-emails",
+              "features/marketing-campaigns",
+              "features/contact-management",
+              "features/domain-management",
+              "features/email-tracking",
+              "features/scheduling"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/webhooks",
+              "guides/double-opt-in",
+              "guides/react-email",
+              "guides/email-editor"
+            ]
+          },
+          {
+            "group": "Self-Hosting",
+            "pages": [
+              "self-hosting/overview",
+              "self-hosting/docker",
+              "self-hosting/railway",
+              "self-hosting/configuration",
+              "self-hosting/local-development"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "api-reference/overview",
+              "api-reference/authentication",
+              "api-reference/rate-limits",
+              "api-reference/errors"
+            ]
+          },
+          {
+            "group": "Emails",
+            "pages": [
+              "api-reference/emails/send",
+              "api-reference/emails/batch-send",
+              "api-reference/emails/get",
+              "api-reference/emails/list",
+              "api-reference/emails/schedule",
+              "api-reference/emails/update-schedule",
+              "api-reference/emails/cancel-schedule"
+            ]
+          },
+          {
+            "group": "Campaigns",
+            "pages": [
+              "api-reference/campaigns/create",
+              "api-reference/campaigns/get",
+              "api-reference/campaigns/list",
+              "api-reference/campaigns/schedule",
+              "api-reference/campaigns/pause",
+              "api-reference/campaigns/resume"
+            ]
+          },
+          {
+            "group": "Contacts",
+            "pages": [
+              "api-reference/contacts/create",
+              "api-reference/contacts/get",
+              "api-reference/contacts/list",
+              "api-reference/contacts/update",
+              "api-reference/contacts/upsert",
+              "api-reference/contacts/delete"
+            ]
+          },
+          {
+            "group": "Contact Books",
+            "pages": [
+              "api-reference/contact-books/create",
+              "api-reference/contact-books/get",
+              "api-reference/contact-books/list",
+              "api-reference/contact-books/update",
+              "api-reference/contact-books/delete"
+            ]
+          },
+          {
+            "group": "Domains",
+            "pages": [
+              "api-reference/domains/create",
+              "api-reference/domains/get",
+              "api-reference/domains/list",
+              "api-reference/domains/verify",
+              "api-reference/domains/delete"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Transactional email sending via REST API and SMTP",
+    "Marketing campaigns and bulk email sending",
+    "Contact and subscriber management with contact books",
+    "Email analytics and tracking (delivered, opened, clicked, bounced)",
+    "Built-in visual email editor",
+    "Domain management and verification",
+    "Email scheduling and batch sending",
+    "Webhook support for email events",
+    "Self-hostable with Docker",
+    "TypeScript and Python SDKs"
+  ],
+  "publicApiSurface": [
+    "POST /api/v1/emails - Send transactional email",
+    "POST /api/v1/emails/batch - Send batch emails",
+    "GET /api/v1/emails/:id - Get email details",
+    "GET /api/v1/emails - List emails",
+    "POST /api/v1/emails/schedule - Schedule email",
+    "PATCH /api/v1/emails/schedule - Update scheduled email",
+    "DELETE /api/v1/emails/schedule - Cancel scheduled email",
+    "POST /api/v1/campaigns - Create marketing campaign",
+    "GET /api/v1/campaigns/:id - Get campaign",
+    "GET /api/v1/campaigns - List campaigns",
+    "POST /api/v1/campaigns/schedule - Schedule campaign",
+    "POST /api/v1/campaigns/pause - Pause campaign",
+    "POST /api/v1/campaigns/resume - Resume campaign",
+    "POST /api/v1/contacts - Create contact",
+    "GET /api/v1/contacts/:id - Get contact",
+    "GET /api/v1/contacts - List contacts",
+    "PATCH /api/v1/contacts/:id - Update contact",
+    "PUT /api/v1/contacts - Upsert contact",
+    "DELETE /api/v1/contacts/:id - Delete contact",
+    "POST /api/v1/contact-books - Create contact book",
+    "GET /api/v1/contact-books/:id - Get contact book",
+    "GET /api/v1/contact-books - List contact books",
+    "PATCH /api/v1/contact-books/:id - Update contact book",
+    "DELETE /api/v1/contact-books/:id - Delete contact book",
+    "POST /api/v1/domains - Add domain",
+    "GET /api/v1/domains/:id - Get domain",
+    "GET /api/v1/domains - List domains",
+    "POST /api/v1/domains/:id/verify - Verify domain",
+    "DELETE /api/v1/domains/:id - Delete domain",
+    "SMTP server on port 2525"
+  ]
+}
